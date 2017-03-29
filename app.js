@@ -1,7 +1,7 @@
 // Sample node.js web app for Pluralsight Docker CI course
 // For demonstration purposes only
 'use strict';
-
+var port = process.env.PORT || 8080;
 var express = require('express'),
     app = express();
 
@@ -14,5 +14,5 @@ app.get('/', function(req, res) {
 });
 //added a commet
 //added a comment 
-app.listen(8080);
+app.listen(port);
 module.exports.getApp = app;
